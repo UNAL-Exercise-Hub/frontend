@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca471867-40e6-4f5b-b351-ff2eb20c683d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/front_end_unworkout/lib/login/domain/models/login_model.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_end_unworkout/lib/login/presentation/login_bloc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_end_unworkout/lib/login/presentation/login_event.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_end_unworkout/lib/login/presentation/login_state.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end_unworkout/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/front_end_unworkout/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end_unworkout/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/front_end_unworkout/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end_unworkout/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/front_end_unworkout/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end_unworkout/lib/login/presentation/login_bloc.freezed.dart" beforeDir="false" afterPath="$PROJECT_DIR$/front_end_unworkout/lib/login/presentation/login_bloc.freezed.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,11 +34,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "C:/Users/josep/OneDrive/Documentos/FidelityRepos/dfr-fidelity-app",
+    "last_opened_file_path": "C:/Users/Jhon E/OneDrive/Documentos/Arquisoft-DESKTOP-I9QQVJC/proyecto/frontend/front_end_unworkout",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
@@ -80,11 +75,6 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Docker.web.frontend: Compose Deployment" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
