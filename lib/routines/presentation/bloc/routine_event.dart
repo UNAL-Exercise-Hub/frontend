@@ -2,5 +2,5 @@ part of "routine_bloc.dart";
 
 @freezed
 class RoutineEvent with _$RoutineEvent{
-  const factory RoutineEvent.getRoutine() = GetRoutine;
+  const factory RoutineEvent.getRoutine(int ID) = GetRoutine;
 }

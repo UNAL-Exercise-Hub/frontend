@@ -21,7 +21,13 @@ class RoutineBloc extends Bloc<RoutineEvent, RoutineState>{
   }
 
   Future<void> _getRoutine(GetRoutine event, Emitter<RoutineState> emit) async{
-    await routineUseCase.call();
+    emit(const RoutineState.loading());
+    try{
+      await routineUseCase.call(ID: event.ID);
+      emit(const RoutineState.doneRoutine());
+    } catch (e){
+      emit(const RoutineState.error());
+    }
   }
 
 }

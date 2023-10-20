@@ -16,19 +16,20 @@ final _privateConstructorUsedError = UnsupportedError(
 
 /// @nodoc
 mixin _$RoutineEvent {
+  int get ID => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() getRoutine,
+    required TResult Function(int ID) getRoutine,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? getRoutine,
+    TResult? Function(int ID)? getRoutine,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? getRoutine,
+    TResult Function(int ID)? getRoutine,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -48,6 +49,10 @@ mixin _$RoutineEvent {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
+
+  @JsonKey(ignore: true)
+  $RoutineEventCopyWith<RoutineEvent> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -55,6 +60,8 @@ abstract class $RoutineEventCopyWith<$Res> {
   factory $RoutineEventCopyWith(
           RoutineEvent value, $Res Function(RoutineEvent) then) =
       _$RoutineEventCopyWithImpl<$Res, RoutineEvent>;
+  @useResult
+  $Res call({int ID});
 }
 
 /// @nodoc
@@ -66,13 +73,30 @@ class _$RoutineEventCopyWithImpl<$Res, $Val extends RoutineEvent>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? ID = null,
+  }) {
+    return _then(_value.copyWith(
+      ID: null == ID
+          ? _value.ID
+          : ID // ignore: cast_nullable_to_non_nullable
+              as int,
+    ) as $Val);
+  }
 }
 
 /// @nodoc
-abstract class _$$GetRoutineImplCopyWith<$Res> {
+abstract class _$$GetRoutineImplCopyWith<$Res>
+    implements $RoutineEventCopyWith<$Res> {
   factory _$$GetRoutineImplCopyWith(
           _$GetRoutineImpl value, $Res Function(_$GetRoutineImpl) then) =
       __$$GetRoutineImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call({int ID});
 }
 
 /// @nodoc
@@ -82,51 +106,75 @@ class __$$GetRoutineImplCopyWithImpl<$Res>
   __$$GetRoutineImplCopyWithImpl(
       _$GetRoutineImpl _value, $Res Function(_$GetRoutineImpl) _then)
       : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? ID = null,
+  }) {
+    return _then(_$GetRoutineImpl(
+      null == ID
+          ? _value.ID
+          : ID // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
+  }
 }
 
 /// @nodoc
 
 class _$GetRoutineImpl implements GetRoutine {
-  const _$GetRoutineImpl();
+  const _$GetRoutineImpl(this.ID);
+
+  @override
+  final int ID;
 
   @override
   String toString() {
-    return 'RoutineEvent.getRoutine()';
+    return 'RoutineEvent.getRoutine(ID: $ID)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$GetRoutineImpl);
+        (other.runtimeType == runtimeType &&
+            other is _$GetRoutineImpl &&
+            (identical(other.ID, ID) || other.ID == ID));
   }
 
   @override
-  int get hashCode => runtimeType.hashCode;
+  int get hashCode => Object.hash(runtimeType, ID);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$GetRoutineImplCopyWith<_$GetRoutineImpl> get copyWith =>
+      __$$GetRoutineImplCopyWithImpl<_$GetRoutineImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() getRoutine,
+    required TResult Function(int ID) getRoutine,
   }) {
-    return getRoutine();
+    return getRoutine(ID);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? getRoutine,
+    TResult? Function(int ID)? getRoutine,
   }) {
-    return getRoutine?.call();
+    return getRoutine?.call(ID);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? getRoutine,
+    TResult Function(int ID)? getRoutine,
     required TResult orElse(),
   }) {
     if (getRoutine != null) {
-      return getRoutine();
+      return getRoutine(ID);
     }
     return orElse();
   }
@@ -161,7 +209,14 @@ class _$GetRoutineImpl implements GetRoutine {
 }
 
 abstract class GetRoutine implements RoutineEvent {
-  const factory GetRoutine() = _$GetRoutineImpl;
+  const factory GetRoutine(final int ID) = _$GetRoutineImpl;
+
+  @override
+  int get ID;
+  @override
+  @JsonKey(ignore: true)
+  _$$GetRoutineImplCopyWith<_$GetRoutineImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
