@@ -10,22 +10,14 @@ class LoginRepositoryImp implements ILoginRepository {
 
   @override
   Future<void> login(String email, String password) async {
-    //try {
-      final repoResult = await client.query(QueryOptions(
+    try {
+      await client.query(QueryOptions(
           document: gql(loginQuery),
           fetchPolicy: FetchPolicy.noCache,
           variables: {"email": email, "password": password},
           pollInterval: const Duration(seconds: 10)));
-     /* print("object");
-      print("object00");
-    } catch (e){
-      print(e);
+    } catch (e) {
+      throw Exception("Error en el ingreso");
     }
-    print("hola");*/
-    if(repoResult.hasException){
-      print("Error consultando");
-      print(repoResult.exception.toString());
-    }
-    print(repoResult.data);
   }
 }

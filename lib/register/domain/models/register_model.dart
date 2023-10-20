@@ -6,7 +6,8 @@ class RegisterModel {
   final String sexo;
   final BigInt cel;
   final String email;
+  final String password;
 
-  RegisterModel({required this.id_usuario, required this.nombres, required this.apellidos, required this.fecha_nacimiento, required this.sexo, required this.cel, required this.email});
+  RegisterModel({required this.id_usuario, required this.nombres, required this.apellidos, required this.fecha_nacimiento, required this.sexo, required this.cel, required this.email, required this.password});
 
 }

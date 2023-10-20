@@ -5,7 +5,7 @@ class RoutineUseCase {
 
   RoutineUseCase(this._iRoutineRepository);
 
-  Future<void> call({String? email, String? password}){
-    return _iRoutineRepository.getRoutine(email!, password!);
+  Future<void> call({int? ID}){
+    return _iRoutineRepository.getRoutine(ID!);
   }
 }
