@@ -24,7 +24,7 @@ class RegisterViewApp extends State<RegisterApp> {
       appBar: Navbar(), // Mostrar la barra de navegación
       body: SingleChildScrollView(
         child: Column(
-        children: [
+        children: [          
           Center(
             child: Container(
               padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
