@@ -119,6 +119,8 @@ class FeedPost extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool isMobile = MediaQuery.of(context).size.width < 600; // Detectar si es un dispositivo móvil
+
     return Card(
       margin: EdgeInsets.all(16),
       child: Column(
@@ -136,7 +138,15 @@ class FeedPost extends StatelessWidget {
                 initialVideoId: YoutubePlayer.convertUrlToId(videoUrl)!,
               ),
             ),
-            builder: (context, player) => player,
+            builder: (context, player) {
+              return isMobile // Ajustar el tamaño en función del dispositivo
+                  ? player // En dispositivos móviles, mantener el tamaño original
+                  : SizedBox(
+                      width: 400, // Ancho reducido en dispositivos de escritorio
+                      height: 225, // Alto reducido en dispositivos de escritorio
+                      child: player,
+                    );
+            },
           ),
           Padding(
             padding: const EdgeInsets.all(16.0),
@@ -159,4 +169,3 @@ class FeedPost extends StatelessWidget {
     );
   }
 }
-

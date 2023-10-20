@@ -5,8 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca471867-40e6-4f5b-b351-ff2eb20c683d" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/.run/main.dart.run.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/base/di/injection_container.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/base/graphql/graphql_config.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/base/presentation/widgets/error_indicator.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/base/presentation/widgets/loading_indicator.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/routines/domain/models/routine_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/routines/domain/reposittories/routine_repository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/routines/domain/use_cases/routine_use_cases.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/routines/presentation/bloc/routine_bloc.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/routines/presentation/bloc/routine_bloc.freezed.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/routines/presentation/bloc/routine_event.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/routines/presentation/bloc/routine_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/routines/presentation/pages/routine_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/routines/presentation/views/create_routine_view.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/routines/presentation/views/routine_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/frontend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frontend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/login/data/repositories/login_repository_imp.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/data/repositories/login_repository_imp.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/login/data/schemas/login_schemas.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/data/schemas/login_schemas.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/login/domain/models/login_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/domain/models/login_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/login/domain/repositories/login_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/domain/repositories/login_repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/login/domain/use_cases/login_use_case.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/domain/use_cases/login_use_case.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/login/presentation/bloc/login_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/presentation/bloc/login_bloc.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/login/presentation/bloc/login_bloc.freezed.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/presentation/bloc/login_bloc.freezed.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/login/presentation/bloc/login_event.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/presentation/bloc/login_event.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/login/presentation/bloc/login_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/presentation/bloc/login_state.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/login/presentation/pages/login_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/presentation/pages/login_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/login/presentation/views/login_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/presentation/views/login_view.dart" afterDir="false" />
+>>>>>>> 4b381b7c61eb50f6715693223d1ec267b50a21e8
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
@@ -35,6 +67,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -46,10 +79,24 @@
     &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Jhon E/OneDrive/Documentos/Arquisoft-DESKTOP-I9QQVJC/proyecto/nuevo intento con el front/frontend&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "io.flutter.reload.alreadyRun": "true",
+    "last_opened_file_path": "C:/Users/josep/OneDrive/Documentos/Universidad/Proyecto Arqui/frontend/lib/register",
+    "settings.editor.selected.configurable": "flutter.settings",
+    "show.migrate.to.gradle.popup": "false"
+>>>>>>> 4b381b7c61eb50f6715693223d1ec267b50a21e8
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\josep\OneDrive\Documentos\Universidad\Proyecto Arqui\frontend\lib\register" />
       <recent name="C:\Users\josep\OneDrive\Documentos\Universidad\Proyecto Arqui\frontend\front_end_unworkout\lib\routines" />
       <recent name="C:\Users\josep\OneDrive\Documentos\Universidad\Proyecto Arqui\frontend\front_end_unworkout\lib\excercise" />
       <recent name="C:\Users\josep\OneDrive\Documentos\Universidad\Proyecto Arqui\frontend\front_end_unworkout\lib\user" />
@@ -65,10 +112,6 @@
       <deployment type="docker-compose.yml">
         <settings />
       </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
-      <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
       <method v="2" />
     </configuration>
     <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
@@ -93,6 +136,16 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Docker.web.frontend: Compose Deployment" />
+      <item itemvalue="Flutter.main.dart" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -111,6 +164,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
     </layout>
   </component>
+<<<<<<< HEAD
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -121,5 +175,37 @@
         </entry>
       </map>
     </option>
+=======
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/login/data/repositories/login_repository_imp.dart</url>
+          <line>21</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/login/data/repositories/login_repository_imp.dart</url>
+          <line>23</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/login/data/repositories/login_repository_imp.dart</url>
+          <line>19</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/login/data/repositories/login_repository_imp.dart</url>
+          <line>18</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/login/data/repositories/login_repository_imp.dart</url>
+          <line>13</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+>>>>>>> 4b381b7c61eb50f6715693223d1ec267b50a21e8
   </component>
 </project>

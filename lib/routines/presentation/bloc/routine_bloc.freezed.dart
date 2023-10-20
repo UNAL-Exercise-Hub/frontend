@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'login_bloc.dart';
+part of 'routine_bloc.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,180 +15,118 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-mixin _$LoginEvent {
-  String get email => throw _privateConstructorUsedError;
-  String get password => throw _privateConstructorUsedError;
+mixin _$RoutineEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(String email, String password) login,
+    required TResult Function() getRoutine,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(String email, String password)? login,
+    TResult? Function()? getRoutine,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(String email, String password)? login,
+    TResult Function()? getRoutine,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(Login value) login,
+    required TResult Function(GetRoutine value) getRoutine,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(Login value)? login,
+    TResult? Function(GetRoutine value)? getRoutine,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(Login value)? login,
+    TResult Function(GetRoutine value)? getRoutine,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
-
-  @JsonKey(ignore: true)
-  $LoginEventCopyWith<LoginEvent> get copyWith =>
-      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $LoginEventCopyWith<$Res> {
-  factory $LoginEventCopyWith(
-          LoginEvent value, $Res Function(LoginEvent) then) =
-      _$LoginEventCopyWithImpl<$Res, LoginEvent>;
-  @useResult
-  $Res call({String email, String password});
+abstract class $RoutineEventCopyWith<$Res> {
+  factory $RoutineEventCopyWith(
+          RoutineEvent value, $Res Function(RoutineEvent) then) =
+      _$RoutineEventCopyWithImpl<$Res, RoutineEvent>;
 }
 
 /// @nodoc
-class _$LoginEventCopyWithImpl<$Res, $Val extends LoginEvent>
-    implements $LoginEventCopyWith<$Res> {
-  _$LoginEventCopyWithImpl(this._value, this._then);
+class _$RoutineEventCopyWithImpl<$Res, $Val extends RoutineEvent>
+    implements $RoutineEventCopyWith<$Res> {
+  _$RoutineEventCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? email = null,
-    Object? password = null,
-  }) {
-    return _then(_value.copyWith(
-      email: null == email
-          ? _value.email
-          : email // ignore: cast_nullable_to_non_nullable
-              as String,
-      password: null == password
-          ? _value.password
-          : password // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
-  }
 }
 
 /// @nodoc
-abstract class _$$LoginImplCopyWith<$Res> implements $LoginEventCopyWith<$Res> {
-  factory _$$LoginImplCopyWith(
-          _$LoginImpl value, $Res Function(_$LoginImpl) then) =
-      __$$LoginImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({String email, String password});
+abstract class _$$GetRoutineImplCopyWith<$Res> {
+  factory _$$GetRoutineImplCopyWith(
+          _$GetRoutineImpl value, $Res Function(_$GetRoutineImpl) then) =
+      __$$GetRoutineImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$LoginImplCopyWithImpl<$Res>
-    extends _$LoginEventCopyWithImpl<$Res, _$LoginImpl>
-    implements _$$LoginImplCopyWith<$Res> {
-  __$$LoginImplCopyWithImpl(
-      _$LoginImpl _value, $Res Function(_$LoginImpl) _then)
+class __$$GetRoutineImplCopyWithImpl<$Res>
+    extends _$RoutineEventCopyWithImpl<$Res, _$GetRoutineImpl>
+    implements _$$GetRoutineImplCopyWith<$Res> {
+  __$$GetRoutineImplCopyWithImpl(
+      _$GetRoutineImpl _value, $Res Function(_$GetRoutineImpl) _then)
       : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? email = null,
-    Object? password = null,
-  }) {
-    return _then(_$LoginImpl(
-      null == email
-          ? _value.email
-          : email // ignore: cast_nullable_to_non_nullable
-              as String,
-      null == password
-          ? _value.password
-          : password // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
 }
 
 /// @nodoc
 
-class _$LoginImpl implements Login {
-  const _$LoginImpl(this.email, this.password);
-
-  @override
-  final String email;
-  @override
-  final String password;
+class _$GetRoutineImpl implements GetRoutine {
+  const _$GetRoutineImpl();
 
   @override
   String toString() {
-    return 'LoginEvent.login(email: $email, password: $password)';
+    return 'RoutineEvent.getRoutine()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$LoginImpl &&
-            (identical(other.email, email) || other.email == email) &&
-            (identical(other.password, password) ||
-                other.password == password));
+        (other.runtimeType == runtimeType && other is _$GetRoutineImpl);
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, email, password);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$LoginImplCopyWith<_$LoginImpl> get copyWith =>
-      __$$LoginImplCopyWithImpl<_$LoginImpl>(this, _$identity);
+  int get hashCode => runtimeType.hashCode;
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(String email, String password) login,
+    required TResult Function() getRoutine,
   }) {
-    return login(email, password);
+    return getRoutine();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(String email, String password)? login,
+    TResult? Function()? getRoutine,
   }) {
-    return login?.call(email, password);
+    return getRoutine?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(String email, String password)? login,
+    TResult Function()? getRoutine,
     required TResult orElse(),
   }) {
-    if (login != null) {
-      return login(email, password);
+    if (getRoutine != null) {
+      return getRoutine();
     }
     return orElse();
   }
@@ -196,52 +134,43 @@ class _$LoginImpl implements Login {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(Login value) login,
+    required TResult Function(GetRoutine value) getRoutine,
   }) {
-    return login(this);
+    return getRoutine(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(Login value)? login,
+    TResult? Function(GetRoutine value)? getRoutine,
   }) {
-    return login?.call(this);
+    return getRoutine?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(Login value)? login,
+    TResult Function(GetRoutine value)? getRoutine,
     required TResult orElse(),
   }) {
-    if (login != null) {
-      return login(this);
+    if (getRoutine != null) {
+      return getRoutine(this);
     }
     return orElse();
   }
 }
 
-abstract class Login implements LoginEvent {
-  const factory Login(final String email, final String password) = _$LoginImpl;
-
-  @override
-  String get email;
-  @override
-  String get password;
-  @override
-  @JsonKey(ignore: true)
-  _$$LoginImplCopyWith<_$LoginImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+abstract class GetRoutine implements RoutineEvent {
+  const factory GetRoutine() = _$GetRoutineImpl;
 }
 
 /// @nodoc
-mixin _$LoginState {
+mixin _$RoutineState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function() doneLogin,
+    required TResult Function() doneRoutine,
     required TResult Function() error,
   }) =>
       throw _privateConstructorUsedError;
@@ -249,7 +178,7 @@ mixin _$LoginState {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function()? doneLogin,
+    TResult? Function()? doneRoutine,
     TResult? Function()? error,
   }) =>
       throw _privateConstructorUsedError;
@@ -257,7 +186,7 @@ mixin _$LoginState {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function()? doneLogin,
+    TResult Function()? doneRoutine,
     TResult Function()? error,
     required TResult orElse(),
   }) =>
@@ -266,7 +195,7 @@ mixin _$LoginState {
   TResult map<TResult extends Object?>({
     required TResult Function(Initial value) initial,
     required TResult Function(Loading value) loading,
-    required TResult Function(DoneLogin value) doneLogin,
+    required TResult Function(DoneRoutine value) doneRoutine,
     required TResult Function(Error value) error,
   }) =>
       throw _privateConstructorUsedError;
@@ -274,7 +203,7 @@ mixin _$LoginState {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(Initial value)? initial,
     TResult? Function(Loading value)? loading,
-    TResult? Function(DoneLogin value)? doneLogin,
+    TResult? Function(DoneRoutine value)? doneRoutine,
     TResult? Function(Error value)? error,
   }) =>
       throw _privateConstructorUsedError;
@@ -282,7 +211,7 @@ mixin _$LoginState {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
-    TResult Function(DoneLogin value)? doneLogin,
+    TResult Function(DoneRoutine value)? doneRoutine,
     TResult Function(Error value)? error,
     required TResult orElse(),
   }) =>
@@ -290,16 +219,16 @@ mixin _$LoginState {
 }
 
 /// @nodoc
-abstract class $LoginStateCopyWith<$Res> {
-  factory $LoginStateCopyWith(
-          LoginState value, $Res Function(LoginState) then) =
-      _$LoginStateCopyWithImpl<$Res, LoginState>;
+abstract class $RoutineStateCopyWith<$Res> {
+  factory $RoutineStateCopyWith(
+          RoutineState value, $Res Function(RoutineState) then) =
+      _$RoutineStateCopyWithImpl<$Res, RoutineState>;
 }
 
 /// @nodoc
-class _$LoginStateCopyWithImpl<$Res, $Val extends LoginState>
-    implements $LoginStateCopyWith<$Res> {
-  _$LoginStateCopyWithImpl(this._value, this._then);
+class _$RoutineStateCopyWithImpl<$Res, $Val extends RoutineState>
+    implements $RoutineStateCopyWith<$Res> {
+  _$RoutineStateCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -316,7 +245,7 @@ abstract class _$$InitialImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$InitialImplCopyWithImpl<$Res>
-    extends _$LoginStateCopyWithImpl<$Res, _$InitialImpl>
+    extends _$RoutineStateCopyWithImpl<$Res, _$InitialImpl>
     implements _$$InitialImplCopyWith<$Res> {
   __$$InitialImplCopyWithImpl(
       _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
@@ -330,7 +259,7 @@ class _$InitialImpl implements Initial {
 
   @override
   String toString() {
-    return 'LoginState.initial()';
+    return 'RoutineState.initial()';
   }
 
   @override
@@ -347,7 +276,7 @@ class _$InitialImpl implements Initial {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function() doneLogin,
+    required TResult Function() doneRoutine,
     required TResult Function() error,
   }) {
     return initial();
@@ -358,7 +287,7 @@ class _$InitialImpl implements Initial {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function()? doneLogin,
+    TResult? Function()? doneRoutine,
     TResult? Function()? error,
   }) {
     return initial?.call();
@@ -369,7 +298,7 @@ class _$InitialImpl implements Initial {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function()? doneLogin,
+    TResult Function()? doneRoutine,
     TResult Function()? error,
     required TResult orElse(),
   }) {
@@ -384,7 +313,7 @@ class _$InitialImpl implements Initial {
   TResult map<TResult extends Object?>({
     required TResult Function(Initial value) initial,
     required TResult Function(Loading value) loading,
-    required TResult Function(DoneLogin value) doneLogin,
+    required TResult Function(DoneRoutine value) doneRoutine,
     required TResult Function(Error value) error,
   }) {
     return initial(this);
@@ -395,7 +324,7 @@ class _$InitialImpl implements Initial {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(Initial value)? initial,
     TResult? Function(Loading value)? loading,
-    TResult? Function(DoneLogin value)? doneLogin,
+    TResult? Function(DoneRoutine value)? doneRoutine,
     TResult? Function(Error value)? error,
   }) {
     return initial?.call(this);
@@ -406,7 +335,7 @@ class _$InitialImpl implements Initial {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
-    TResult Function(DoneLogin value)? doneLogin,
+    TResult Function(DoneRoutine value)? doneRoutine,
     TResult Function(Error value)? error,
     required TResult orElse(),
   }) {
@@ -417,7 +346,7 @@ class _$InitialImpl implements Initial {
   }
 }
 
-abstract class Initial implements LoginState {
+abstract class Initial implements RoutineState {
   const factory Initial() = _$InitialImpl;
 }
 
@@ -430,7 +359,7 @@ abstract class _$$LoadingImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$LoadingImplCopyWithImpl<$Res>
-    extends _$LoginStateCopyWithImpl<$Res, _$LoadingImpl>
+    extends _$RoutineStateCopyWithImpl<$Res, _$LoadingImpl>
     implements _$$LoadingImplCopyWith<$Res> {
   __$$LoadingImplCopyWithImpl(
       _$LoadingImpl _value, $Res Function(_$LoadingImpl) _then)
@@ -444,7 +373,7 @@ class _$LoadingImpl implements Loading {
 
   @override
   String toString() {
-    return 'LoginState.loading()';
+    return 'RoutineState.loading()';
   }
 
   @override
@@ -461,7 +390,7 @@ class _$LoadingImpl implements Loading {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function() doneLogin,
+    required TResult Function() doneRoutine,
     required TResult Function() error,
   }) {
     return loading();
@@ -472,7 +401,7 @@ class _$LoadingImpl implements Loading {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function()? doneLogin,
+    TResult? Function()? doneRoutine,
     TResult? Function()? error,
   }) {
     return loading?.call();
@@ -483,7 +412,7 @@ class _$LoadingImpl implements Loading {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function()? doneLogin,
+    TResult Function()? doneRoutine,
     TResult Function()? error,
     required TResult orElse(),
   }) {
@@ -498,7 +427,7 @@ class _$LoadingImpl implements Loading {
   TResult map<TResult extends Object?>({
     required TResult Function(Initial value) initial,
     required TResult Function(Loading value) loading,
-    required TResult Function(DoneLogin value) doneLogin,
+    required TResult Function(DoneRoutine value) doneRoutine,
     required TResult Function(Error value) error,
   }) {
     return loading(this);
@@ -509,7 +438,7 @@ class _$LoadingImpl implements Loading {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(Initial value)? initial,
     TResult? Function(Loading value)? loading,
-    TResult? Function(DoneLogin value)? doneLogin,
+    TResult? Function(DoneRoutine value)? doneRoutine,
     TResult? Function(Error value)? error,
   }) {
     return loading?.call(this);
@@ -520,7 +449,7 @@ class _$LoadingImpl implements Loading {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
-    TResult Function(DoneLogin value)? doneLogin,
+    TResult Function(DoneRoutine value)? doneRoutine,
     TResult Function(Error value)? error,
     required TResult orElse(),
   }) {
@@ -531,40 +460,40 @@ class _$LoadingImpl implements Loading {
   }
 }
 
-abstract class Loading implements LoginState {
+abstract class Loading implements RoutineState {
   const factory Loading() = _$LoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$DoneLoginImplCopyWith<$Res> {
-  factory _$$DoneLoginImplCopyWith(
-          _$DoneLoginImpl value, $Res Function(_$DoneLoginImpl) then) =
-      __$$DoneLoginImplCopyWithImpl<$Res>;
+abstract class _$$DoneRoutineImplCopyWith<$Res> {
+  factory _$$DoneRoutineImplCopyWith(
+          _$DoneRoutineImpl value, $Res Function(_$DoneRoutineImpl) then) =
+      __$$DoneRoutineImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$DoneLoginImplCopyWithImpl<$Res>
-    extends _$LoginStateCopyWithImpl<$Res, _$DoneLoginImpl>
-    implements _$$DoneLoginImplCopyWith<$Res> {
-  __$$DoneLoginImplCopyWithImpl(
-      _$DoneLoginImpl _value, $Res Function(_$DoneLoginImpl) _then)
+class __$$DoneRoutineImplCopyWithImpl<$Res>
+    extends _$RoutineStateCopyWithImpl<$Res, _$DoneRoutineImpl>
+    implements _$$DoneRoutineImplCopyWith<$Res> {
+  __$$DoneRoutineImplCopyWithImpl(
+      _$DoneRoutineImpl _value, $Res Function(_$DoneRoutineImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$DoneLoginImpl implements DoneLogin {
-  const _$DoneLoginImpl();
+class _$DoneRoutineImpl implements DoneRoutine {
+  const _$DoneRoutineImpl();
 
   @override
   String toString() {
-    return 'LoginState.doneLogin()';
+    return 'RoutineState.doneRoutine()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$DoneLoginImpl);
+        (other.runtimeType == runtimeType && other is _$DoneRoutineImpl);
   }
 
   @override
@@ -575,10 +504,10 @@ class _$DoneLoginImpl implements DoneLogin {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function() doneLogin,
+    required TResult Function() doneRoutine,
     required TResult Function() error,
   }) {
-    return doneLogin();
+    return doneRoutine();
   }
 
   @override
@@ -586,10 +515,10 @@ class _$DoneLoginImpl implements DoneLogin {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function()? doneLogin,
+    TResult? Function()? doneRoutine,
     TResult? Function()? error,
   }) {
-    return doneLogin?.call();
+    return doneRoutine?.call();
   }
 
   @override
@@ -597,12 +526,12 @@ class _$DoneLoginImpl implements DoneLogin {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function()? doneLogin,
+    TResult Function()? doneRoutine,
     TResult Function()? error,
     required TResult orElse(),
   }) {
-    if (doneLogin != null) {
-      return doneLogin();
+    if (doneRoutine != null) {
+      return doneRoutine();
     }
     return orElse();
   }
@@ -612,10 +541,10 @@ class _$DoneLoginImpl implements DoneLogin {
   TResult map<TResult extends Object?>({
     required TResult Function(Initial value) initial,
     required TResult Function(Loading value) loading,
-    required TResult Function(DoneLogin value) doneLogin,
+    required TResult Function(DoneRoutine value) doneRoutine,
     required TResult Function(Error value) error,
   }) {
-    return doneLogin(this);
+    return doneRoutine(this);
   }
 
   @override
@@ -623,10 +552,10 @@ class _$DoneLoginImpl implements DoneLogin {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(Initial value)? initial,
     TResult? Function(Loading value)? loading,
-    TResult? Function(DoneLogin value)? doneLogin,
+    TResult? Function(DoneRoutine value)? doneRoutine,
     TResult? Function(Error value)? error,
   }) {
-    return doneLogin?.call(this);
+    return doneRoutine?.call(this);
   }
 
   @override
@@ -634,19 +563,19 @@ class _$DoneLoginImpl implements DoneLogin {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
-    TResult Function(DoneLogin value)? doneLogin,
+    TResult Function(DoneRoutine value)? doneRoutine,
     TResult Function(Error value)? error,
     required TResult orElse(),
   }) {
-    if (doneLogin != null) {
-      return doneLogin(this);
+    if (doneRoutine != null) {
+      return doneRoutine(this);
     }
     return orElse();
   }
 }
 
-abstract class DoneLogin implements LoginState {
-  const factory DoneLogin() = _$DoneLoginImpl;
+abstract class DoneRoutine implements RoutineState {
+  const factory DoneRoutine() = _$DoneRoutineImpl;
 }
 
 /// @nodoc
@@ -658,7 +587,7 @@ abstract class _$$ErrorImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$ErrorImplCopyWithImpl<$Res>
-    extends _$LoginStateCopyWithImpl<$Res, _$ErrorImpl>
+    extends _$RoutineStateCopyWithImpl<$Res, _$ErrorImpl>
     implements _$$ErrorImplCopyWith<$Res> {
   __$$ErrorImplCopyWithImpl(
       _$ErrorImpl _value, $Res Function(_$ErrorImpl) _then)
@@ -672,7 +601,7 @@ class _$ErrorImpl implements Error {
 
   @override
   String toString() {
-    return 'LoginState.error()';
+    return 'RoutineState.error()';
   }
 
   @override
@@ -689,7 +618,7 @@ class _$ErrorImpl implements Error {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function() doneLogin,
+    required TResult Function() doneRoutine,
     required TResult Function() error,
   }) {
     return error();
@@ -700,7 +629,7 @@ class _$ErrorImpl implements Error {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function()? doneLogin,
+    TResult? Function()? doneRoutine,
     TResult? Function()? error,
   }) {
     return error?.call();
@@ -711,7 +640,7 @@ class _$ErrorImpl implements Error {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function()? doneLogin,
+    TResult Function()? doneRoutine,
     TResult Function()? error,
     required TResult orElse(),
   }) {
@@ -726,7 +655,7 @@ class _$ErrorImpl implements Error {
   TResult map<TResult extends Object?>({
     required TResult Function(Initial value) initial,
     required TResult Function(Loading value) loading,
-    required TResult Function(DoneLogin value) doneLogin,
+    required TResult Function(DoneRoutine value) doneRoutine,
     required TResult Function(Error value) error,
   }) {
     return error(this);
@@ -737,7 +666,7 @@ class _$ErrorImpl implements Error {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(Initial value)? initial,
     TResult? Function(Loading value)? loading,
-    TResult? Function(DoneLogin value)? doneLogin,
+    TResult? Function(DoneRoutine value)? doneRoutine,
     TResult? Function(Error value)? error,
   }) {
     return error?.call(this);
@@ -748,7 +677,7 @@ class _$ErrorImpl implements Error {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
-    TResult Function(DoneLogin value)? doneLogin,
+    TResult Function(DoneRoutine value)? doneRoutine,
     TResult Function(Error value)? error,
     required TResult orElse(),
   }) {
@@ -759,6 +688,6 @@ class _$ErrorImpl implements Error {
   }
 }
 
-abstract class Error implements LoginState {
+abstract class Error implements RoutineState {
   const factory Error() = _$ErrorImpl;
 }
