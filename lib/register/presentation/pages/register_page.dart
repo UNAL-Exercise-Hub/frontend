@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:front_end_unworkout/base/presentation/widgets/loading_indicator.dart';
-import 'package:front_end_unworkout/login/presentation/bloc/login_bloc.dart';
-import 'package:front_end_unworkout/login/presentation/views/login_view.dart';
+import 'package:front_end_unworkout/register/presentation/bloc/register_bloc.dart';
 import 'package:get_it/get_it.dart';
 
 class LoginPage extends StatelessWidget{
@@ -10,24 +9,23 @@ class LoginPage extends StatelessWidget{
 
   @override
   Widget build(BuildContext context){
-    return BlocProvider<LoginBloc>(
-      create: (context) => GetIt.instance<LoginBloc>(),
+    return BlocProvider<RegisterBloc>(
+      create: (context) => GetIt.instance<RegisterBloc>(),
       child: Scaffold(
         appBar: AppBar(
-            title: const Text("Inicia Sesión"),
+            title: const Text("Registrate"),
             backgroundColor: const Color(0xFFD60909),
           ),
         backgroundColor: Colors.white,
-        body: BlocBuilder<LoginBloc, LoginState>(
+        body: BlocBuilder<RegisterBloc, RegisterState>(
             builder: (context, state){
               return state.when(
                 initial: (){
-                  return LoginView(onPressed: (){
-                    context.read<LoginBloc>().add(const LoginEvent.login("email@gmail.com", "email1234"));
-                  });
+                  //TODO: inicializar registerView
+                  return const Text("jeje");
                 },
                 loading: () => LoadingIndicator(),
-                doneLogin: (){
+                doneRegister: (){
                   /*Navigator.push(context, MaterialPageRoute(builder: (context) => RoutinesPage()));*/
                   return const Text("");
                 },

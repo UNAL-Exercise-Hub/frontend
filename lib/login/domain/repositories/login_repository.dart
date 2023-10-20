@@ -1,4 +1,3 @@
-
-abstract class LoginRepository{
-   login(String email, String password);
+abstract class ILoginRepository{
+   Future<void> login(String email, String password);
 }
