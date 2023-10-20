@@ -22,6 +22,11 @@ class LoginBloc extends Bloc<LoginEvent, LoginState>{
 
   Future<void> _loginEvent(Login event, Emitter<LoginState> emit) async{
     emit(const LoginState.loading());
-    await loginUseCase.call(email: event.email, password: event.password);
+    try {
+      await loginUseCase.call(email: event.email, password: event.password);
+      emit(const LoginState.doneLogin());
+    } catch(e){
+      emit(const LoginState.error());
+    }
   }
 }

@@ -6,7 +6,7 @@ import 'package:front_end_unworkout/login/presentation/bloc/login_bloc.dart';
 class LoginView extends StatelessWidget{
   final email = TextEditingController();
   final password = TextEditingController();
-  final onPressed;
+  final void Function(String, String) onPressed;
 
   LoginView({Key? key, required this.onPressed}): super(key: key);
 
@@ -39,7 +39,9 @@ class LoginView extends StatelessWidget{
           ElevatedButton(
               child: const Text("Ingresar"),
               style: ElevatedButton.styleFrom(backgroundColor: const Color(0xFFD60909)),
-              onPressed: this.onPressed)
+              onPressed: (){
+                onPressed( email.value.text, password.value.text);
+              })
         ],
       )
     );

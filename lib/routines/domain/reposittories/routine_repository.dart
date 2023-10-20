@@ -1,3 +1,3 @@
 abstract class IRoutineRepository{
-  Future getRoutine(String email, String password);
+  Future<void> getRoutine(int ID);
 }

@@ -23,24 +23,46 @@ mixin _$RegisterEvent {
   String get sexo => throw _privateConstructorUsedError;
   BigInt get cel => throw _privateConstructorUsedError;
   String get email => throw _privateConstructorUsedError;
+  String get password => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(int id_usuario, String nombres, String apellidos,
-            String fecha_nacimiento, String sexo, BigInt cel, String email)
+    required TResult Function(
+            int id_usuario,
+            String nombres,
+            String apellidos,
+            String fecha_nacimiento,
+            String sexo,
+            BigInt cel,
+            String email,
+            String password)
         register,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(int id_usuario, String nombres, String apellidos,
-            String fecha_nacimiento, String sexo, BigInt cel, String email)?
+    TResult? Function(
+            int id_usuario,
+            String nombres,
+            String apellidos,
+            String fecha_nacimiento,
+            String sexo,
+            BigInt cel,
+            String email,
+            String password)?
         register,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(int id_usuario, String nombres, String apellidos,
-            String fecha_nacimiento, String sexo, BigInt cel, String email)?
+    TResult Function(
+            int id_usuario,
+            String nombres,
+            String apellidos,
+            String fecha_nacimiento,
+            String sexo,
+            BigInt cel,
+            String email,
+            String password)?
         register,
     required TResult orElse(),
   }) =>
@@ -80,7 +102,8 @@ abstract class $RegisterEventCopyWith<$Res> {
       String fecha_nacimiento,
       String sexo,
       BigInt cel,
-      String email});
+      String email,
+      String password});
 }
 
 /// @nodoc
@@ -103,6 +126,7 @@ class _$RegisterEventCopyWithImpl<$Res, $Val extends RegisterEvent>
     Object? sexo = null,
     Object? cel = null,
     Object? email = null,
+    Object? password = null,
   }) {
     return _then(_value.copyWith(
       id_usuario: null == id_usuario
@@ -133,6 +157,10 @@ class _$RegisterEventCopyWithImpl<$Res, $Val extends RegisterEvent>
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String,
+      password: null == password
+          ? _value.password
+          : password // ignore: cast_nullable_to_non_nullable
+              as String,
     ) as $Val);
   }
 }
@@ -152,7 +180,8 @@ abstract class _$$RegisterImplCopyWith<$Res>
       String fecha_nacimiento,
       String sexo,
       BigInt cel,
-      String email});
+      String email,
+      String password});
 }
 
 /// @nodoc
@@ -173,6 +202,7 @@ class __$$RegisterImplCopyWithImpl<$Res>
     Object? sexo = null,
     Object? cel = null,
     Object? email = null,
+    Object? password = null,
   }) {
     return _then(_$RegisterImpl(
       null == id_usuario
@@ -203,6 +233,10 @@ class __$$RegisterImplCopyWithImpl<$Res>
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String,
+      null == password
+          ? _value.password
+          : password // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -211,7 +245,7 @@ class __$$RegisterImplCopyWithImpl<$Res>
 
 class _$RegisterImpl implements Register {
   const _$RegisterImpl(this.id_usuario, this.nombres, this.apellidos,
-      this.fecha_nacimiento, this.sexo, this.cel, this.email);
+      this.fecha_nacimiento, this.sexo, this.cel, this.email, this.password);
 
   @override
   final int id_usuario;
@@ -227,10 +261,12 @@ class _$RegisterImpl implements Register {
   final BigInt cel;
   @override
   final String email;
+  @override
+  final String password;
 
   @override
   String toString() {
-    return 'RegisterEvent.register(id_usuario: $id_usuario, nombres: $nombres, apellidos: $apellidos, fecha_nacimiento: $fecha_nacimiento, sexo: $sexo, cel: $cel, email: $email)';
+    return 'RegisterEvent.register(id_usuario: $id_usuario, nombres: $nombres, apellidos: $apellidos, fecha_nacimiento: $fecha_nacimiento, sexo: $sexo, cel: $cel, email: $email, password: $password)';
   }
 
   @override
@@ -247,12 +283,14 @@ class _$RegisterImpl implements Register {
                 other.fecha_nacimiento == fecha_nacimiento) &&
             (identical(other.sexo, sexo) || other.sexo == sexo) &&
             (identical(other.cel, cel) || other.cel == cel) &&
-            (identical(other.email, email) || other.email == email));
+            (identical(other.email, email) || other.email == email) &&
+            (identical(other.password, password) ||
+                other.password == password));
   }
 
   @override
   int get hashCode => Object.hash(runtimeType, id_usuario, nombres, apellidos,
-      fecha_nacimiento, sexo, cel, email);
+      fecha_nacimiento, sexo, cel, email, password);
 
   @JsonKey(ignore: true)
   @override
@@ -263,36 +301,57 @@ class _$RegisterImpl implements Register {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(int id_usuario, String nombres, String apellidos,
-            String fecha_nacimiento, String sexo, BigInt cel, String email)
+    required TResult Function(
+            int id_usuario,
+            String nombres,
+            String apellidos,
+            String fecha_nacimiento,
+            String sexo,
+            BigInt cel,
+            String email,
+            String password)
         register,
   }) {
-    return register(
-        id_usuario, nombres, apellidos, fecha_nacimiento, sexo, cel, email);
+    return register(id_usuario, nombres, apellidos, fecha_nacimiento, sexo, cel,
+        email, password);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(int id_usuario, String nombres, String apellidos,
-            String fecha_nacimiento, String sexo, BigInt cel, String email)?
+    TResult? Function(
+            int id_usuario,
+            String nombres,
+            String apellidos,
+            String fecha_nacimiento,
+            String sexo,
+            BigInt cel,
+            String email,
+            String password)?
         register,
   }) {
-    return register?.call(
-        id_usuario, nombres, apellidos, fecha_nacimiento, sexo, cel, email);
+    return register?.call(id_usuario, nombres, apellidos, fecha_nacimiento,
+        sexo, cel, email, password);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(int id_usuario, String nombres, String apellidos,
-            String fecha_nacimiento, String sexo, BigInt cel, String email)?
+    TResult Function(
+            int id_usuario,
+            String nombres,
+            String apellidos,
+            String fecha_nacimiento,
+            String sexo,
+            BigInt cel,
+            String email,
+            String password)?
         register,
     required TResult orElse(),
   }) {
     if (register != null) {
-      return register(
-          id_usuario, nombres, apellidos, fecha_nacimiento, sexo, cel, email);
+      return register(id_usuario, nombres, apellidos, fecha_nacimiento, sexo,
+          cel, email, password);
     }
     return orElse();
   }
@@ -334,7 +393,8 @@ abstract class Register implements RegisterEvent {
       final String fecha_nacimiento,
       final String sexo,
       final BigInt cel,
-      final String email) = _$RegisterImpl;
+      final String email,
+      final String password) = _$RegisterImpl;
 
   @override
   int get id_usuario;
@@ -350,6 +410,8 @@ abstract class Register implements RegisterEvent {
   BigInt get cel;
   @override
   String get email;
+  @override
+  String get password;
   @override
   @JsonKey(ignore: true)
   _$$RegisterImplCopyWith<_$RegisterImpl> get copyWith =>
