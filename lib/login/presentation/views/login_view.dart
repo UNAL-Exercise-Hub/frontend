@@ -57,7 +57,10 @@ class LoginView extends StatelessWidget {
                 child: const Text("Ingresar"),
                 style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFFD60909)),
-                onPressed: this.onPressed),
+                onPressed: (){
+                onPressed( email.value.text, password.value.text);
+              },
+            ),
             ElevatedButton(
                 child: const Text("Registrarse"),
                 style: ElevatedButton.styleFrom(
