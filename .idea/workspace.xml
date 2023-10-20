@@ -5,43 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca471867-40e6-4f5b-b351-ff2eb20c683d" name="Changes" comment="">
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-=======
-      <change afterPath="$PROJECT_DIR$/.run/main.dart.run.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/base/di/injection_container.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/base/graphql/graphql_config.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/base/presentation/widgets/error_indicator.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/base/presentation/widgets/loading_indicator.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/routines/domain/models/routine_model.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/routines/domain/reposittories/routine_repository.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/routines/domain/use_cases/routine_use_cases.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/routines/presentation/bloc/routine_bloc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/routines/presentation/bloc/routine_bloc.freezed.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/routines/presentation/bloc/routine_event.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/routines/presentation/bloc/routine_state.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/routines/presentation/pages/routine_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/routines/presentation/views/create_routine_view.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/routines/presentation/views/routine_view.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/frontend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frontend.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/routines/data/repositories/routine_repository_imp.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/routines/data/schemas/routine_schemas.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/login/data/repositories/login_repository_imp.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/data/repositories/login_repository_imp.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/login/data/schemas/login_schemas.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/data/schemas/login_schemas.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/login/domain/models/login_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/domain/models/login_model.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/login/domain/repositories/login_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/domain/repositories/login_repository.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/login/domain/use_cases/login_use_case.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/domain/use_cases/login_use_case.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/login/presentation/bloc/login_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/presentation/bloc/login_bloc.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/login/presentation/bloc/login_bloc.freezed.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/presentation/bloc/login_bloc.freezed.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/login/presentation/bloc/login_event.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/presentation/bloc/login_event.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/login/presentation/bloc/login_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/presentation/bloc/login_state.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/login/presentation/pages/login_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/presentation/pages/login_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/login/presentation/views/login_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/presentation/views/login_view.dart" afterDir="false" />
->>>>>>> 4b381b7c61eb50f6715693223d1ec267b50a21e8
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/register/data/repositories/register_repository_imp.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/register/data/repositories/register_repository_imp.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/register/domain/models/register_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/register/domain/models/register_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/register/domain/repositories/register_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/register/domain/repositories/register_repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/register/domain/use_cases/register_use_case.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/register/domain/use_cases/register_use_case.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/register/presentation/bloc/register_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/register/presentation/bloc/register_bloc.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/register/presentation/bloc/register_bloc.freezed.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/register/presentation/bloc/register_bloc.freezed.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/register/presentation/bloc/register_event.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/register/presentation/bloc/register_event.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/register/presentation/pages/register_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/register/presentation/pages/register_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/routines/domain/reposittories/routine_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routines/domain/reposittories/routine_repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/routines/domain/use_cases/routine_use_cases.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routines/domain/use_cases/routine_use_cases.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/routines/presentation/pages/routine_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routines/presentation/pages/routine_page.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,31 +48,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Jhon E/OneDrive/Documentos/Arquisoft-DESKTOP-I9QQVJC/proyecto/nuevo intento con el front/frontend&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/josep/OneDrive/Documentos/Universidad/Proyecto Arqui/frontend/lib/register&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;flutter.settings&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
-=======
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "cidr.known.project.marker": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "io.flutter.reload.alreadyRun": "true",
-    "last_opened_file_path": "C:/Users/josep/OneDrive/Documentos/Universidad/Proyecto Arqui/frontend/lib/register",
-    "settings.editor.selected.configurable": "flutter.settings",
-    "show.migrate.to.gradle.popup": "false"
->>>>>>> 4b381b7c61eb50f6715693223d1ec267b50a21e8
   }
 }</component>
   <component name="RecentsManager">
@@ -163,49 +130,5 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
     </layout>
-  </component>
-<<<<<<< HEAD
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-=======
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/login/data/repositories/login_repository_imp.dart</url>
-          <line>21</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/login/data/repositories/login_repository_imp.dart</url>
-          <line>23</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/login/data/repositories/login_repository_imp.dart</url>
-          <line>19</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/login/data/repositories/login_repository_imp.dart</url>
-          <line>18</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/login/data/repositories/login_repository_imp.dart</url>
-          <line>13</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
->>>>>>> 4b381b7c61eb50f6715693223d1ec267b50a21e8
   </component>
 </project>

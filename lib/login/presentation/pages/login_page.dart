@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:front_end_unworkout/base/presentation/widgets/loading_indicator.dart';
 import 'package:front_end_unworkout/login/presentation/bloc/login_bloc.dart';
 import 'package:front_end_unworkout/login/presentation/views/login_view.dart';
+import 'package:front_end_unworkout/routines/presentation/pages/routine_page.dart';
 import 'package:get_it/get_it.dart';
 
 class LoginPage extends StatelessWidget{
@@ -22,17 +23,20 @@ class LoginPage extends StatelessWidget{
             builder: (context, state){
               return state.when(
                 initial: (){
-                  return LoginView(onPressed: (){
-                    context.read<LoginBloc>().add(const LoginEvent.login("email@gmail.com", "email1234"));
+                  return LoginView(onPressed: (String email, String password){
+                    context.read<LoginBloc>().add(LoginEvent.login(email, password));
                   });
                 },
                 loading: () => LoadingIndicator(),
                 doneLogin: (){
-                  /*Navigator.push(context, MaterialPageRoute(builder: (context) => RoutinesPage()));*/
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => RoutinePage()));
+                  print("logeado");
                   return const Text("");
                 },
-                error: () =>
-                  const Text("error")
+                error: () {
+                  print("No se pudo logear");
+                  return const Text("error");
+                }
               );
             }
         )

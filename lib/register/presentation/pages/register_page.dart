@@ -4,8 +4,8 @@ import 'package:front_end_unworkout/base/presentation/widgets/loading_indicator.
 import 'package:front_end_unworkout/register/presentation/bloc/register_bloc.dart';
 import 'package:get_it/get_it.dart';
 
-class LoginPage extends StatelessWidget{
-  const LoginPage({Key? key}): super (key: key);
+class RegisterPage extends StatelessWidget{
+  const RegisterPage({Key? key}): super (key: key);
 
   @override
   Widget build(BuildContext context){

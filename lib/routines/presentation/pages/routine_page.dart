@@ -4,6 +4,7 @@ import 'package:front_end_unworkout/base/presentation/widgets/error_indicator.da
 import 'package:front_end_unworkout/base/presentation/widgets/loading_indicator.dart';
 import 'package:front_end_unworkout/base/presentation/widgets/navbar.dart';
 import 'package:front_end_unworkout/routines/presentation/bloc/routine_bloc.dart';
+import 'package:front_end_unworkout/routines/presentation/views/routine_view.dart';
 import 'package:get_it/get_it.dart';
 
 class RoutinePage extends StatelessWidget{
@@ -21,7 +22,7 @@ class RoutinePage extends StatelessWidget{
                   return state.when(
                       initial: (){
                         context.read<RoutineBloc>().add(const RoutineEvent.getRoutine());
-                        return LoadingIndicator();
+                        return const RoutineView();
                       },
                       loading: () => LoadingIndicator(),
                       doneRoutine: (){
