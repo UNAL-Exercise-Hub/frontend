@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class Videos extends StatelessWidget {
+class VideosView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -53,12 +53,12 @@ class _FeedState extends State<Feed> {
             itemBuilder: (context, index) {
               return FeedPost(
                 author: 'Dia',
-                videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-                titulo: 'Título del Video',
-                duracion: 10,
+                videoUrl: 'https://www.youtube.com/watch?v=2uyHqRGJmZ4',
+                titulo: 'Muscle Up',
+                duracion: 212,
                 series: 3,
-                musculos: ['Pecho', 'Espalda'],
-                grupos: ['Grupo 1', 'Grupo 2'],
+                musculos: ['Abdomen', 'Brazo'],
+                grupos: ['Grupo 3', 'Grupo 4'],
               );
             },
           ),

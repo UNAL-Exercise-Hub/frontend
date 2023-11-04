@@ -20,32 +20,38 @@ mixin _$RoutineEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(int ID) getRoutine,
+    required TResult Function(int ID) deleteRoutine,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(int ID)? getRoutine,
+    TResult? Function(int ID)? deleteRoutine,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(int ID)? getRoutine,
+    TResult Function(int ID)? deleteRoutine,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(GetRoutine value) getRoutine,
+    required TResult Function(DeleteRoutine value) deleteRoutine,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(GetRoutine value)? getRoutine,
+    TResult? Function(DeleteRoutine value)? deleteRoutine,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(GetRoutine value)? getRoutine,
+    TResult Function(DeleteRoutine value)? deleteRoutine,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -155,6 +161,7 @@ class _$GetRoutineImpl implements GetRoutine {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(int ID) getRoutine,
+    required TResult Function(int ID) deleteRoutine,
   }) {
     return getRoutine(ID);
   }
@@ -163,6 +170,7 @@ class _$GetRoutineImpl implements GetRoutine {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(int ID)? getRoutine,
+    TResult? Function(int ID)? deleteRoutine,
   }) {
     return getRoutine?.call(ID);
   }
@@ -171,6 +179,7 @@ class _$GetRoutineImpl implements GetRoutine {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(int ID)? getRoutine,
+    TResult Function(int ID)? deleteRoutine,
     required TResult orElse(),
   }) {
     if (getRoutine != null) {
@@ -183,6 +192,7 @@ class _$GetRoutineImpl implements GetRoutine {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(GetRoutine value) getRoutine,
+    required TResult Function(DeleteRoutine value) deleteRoutine,
   }) {
     return getRoutine(this);
   }
@@ -191,6 +201,7 @@ class _$GetRoutineImpl implements GetRoutine {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(GetRoutine value)? getRoutine,
+    TResult? Function(DeleteRoutine value)? deleteRoutine,
   }) {
     return getRoutine?.call(this);
   }
@@ -199,6 +210,7 @@ class _$GetRoutineImpl implements GetRoutine {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(GetRoutine value)? getRoutine,
+    TResult Function(DeleteRoutine value)? deleteRoutine,
     required TResult orElse(),
   }) {
     if (getRoutine != null) {
@@ -216,6 +228,143 @@ abstract class GetRoutine implements RoutineEvent {
   @override
   @JsonKey(ignore: true)
   _$$GetRoutineImplCopyWith<_$GetRoutineImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$DeleteRoutineImplCopyWith<$Res>
+    implements $RoutineEventCopyWith<$Res> {
+  factory _$$DeleteRoutineImplCopyWith(
+          _$DeleteRoutineImpl value, $Res Function(_$DeleteRoutineImpl) then) =
+      __$$DeleteRoutineImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call({int ID});
+}
+
+/// @nodoc
+class __$$DeleteRoutineImplCopyWithImpl<$Res>
+    extends _$RoutineEventCopyWithImpl<$Res, _$DeleteRoutineImpl>
+    implements _$$DeleteRoutineImplCopyWith<$Res> {
+  __$$DeleteRoutineImplCopyWithImpl(
+      _$DeleteRoutineImpl _value, $Res Function(_$DeleteRoutineImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? ID = null,
+  }) {
+    return _then(_$DeleteRoutineImpl(
+      null == ID
+          ? _value.ID
+          : ID // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$DeleteRoutineImpl implements DeleteRoutine {
+  const _$DeleteRoutineImpl(this.ID);
+
+  @override
+  final int ID;
+
+  @override
+  String toString() {
+    return 'RoutineEvent.deleteRoutine(ID: $ID)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$DeleteRoutineImpl &&
+            (identical(other.ID, ID) || other.ID == ID));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, ID);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$DeleteRoutineImplCopyWith<_$DeleteRoutineImpl> get copyWith =>
+      __$$DeleteRoutineImplCopyWithImpl<_$DeleteRoutineImpl>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(int ID) getRoutine,
+    required TResult Function(int ID) deleteRoutine,
+  }) {
+    return deleteRoutine(ID);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(int ID)? getRoutine,
+    TResult? Function(int ID)? deleteRoutine,
+  }) {
+    return deleteRoutine?.call(ID);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(int ID)? getRoutine,
+    TResult Function(int ID)? deleteRoutine,
+    required TResult orElse(),
+  }) {
+    if (deleteRoutine != null) {
+      return deleteRoutine(ID);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(GetRoutine value) getRoutine,
+    required TResult Function(DeleteRoutine value) deleteRoutine,
+  }) {
+    return deleteRoutine(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetRoutine value)? getRoutine,
+    TResult? Function(DeleteRoutine value)? deleteRoutine,
+  }) {
+    return deleteRoutine?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetRoutine value)? getRoutine,
+    TResult Function(DeleteRoutine value)? deleteRoutine,
+    required TResult orElse(),
+  }) {
+    if (deleteRoutine != null) {
+      return deleteRoutine(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class DeleteRoutine implements RoutineEvent {
+  const factory DeleteRoutine(final int ID) = _$DeleteRoutineImpl;
+
+  @override
+  int get ID;
+  @override
+  @JsonKey(ignore: true)
+  _$$DeleteRoutineImplCopyWith<_$DeleteRoutineImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 

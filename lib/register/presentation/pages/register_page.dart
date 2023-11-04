@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:front_end_unworkout/base/presentation/widgets/footer.dart';
 import 'package:front_end_unworkout/base/presentation/widgets/loading_indicator.dart';
+import 'package:front_end_unworkout/login/presentation/pages/login_page.dart';
 import 'package:front_end_unworkout/register/presentation/bloc/register_bloc.dart';
+import 'package:front_end_unworkout/register/presentation/views/register_view.dart';
 import 'package:get_it/get_it.dart';
 
 class RegisterPage extends StatelessWidget{
@@ -21,19 +24,24 @@ class RegisterPage extends StatelessWidget{
             builder: (context, state){
               return state.when(
                 initial: (){
-                  //TODO: inicializar registerView
-                  return const Text("jeje");
+                  return RegisterView(onPressed: (String nombres, String apellidos, String fecha_nacimiento, String sexo, String cel, String email, String password){
+                    context.read<RegisterBloc>().add(RegisterEvent.register(nombres, apellidos, fecha_nacimiento, sexo, cel, email, password));
+                  });
                 },
                 loading: () => LoadingIndicator(),
                 doneRegister: (){
-                  /*Navigator.push(context, MaterialPageRoute(builder: (context) => RoutinesPage()));*/
+                  LoadingIndicator();
+                  Navigator.of(context).pop();
                   return const Text("");
                 },
-                error: () =>
-                  const Text("error")
+                error: () {
+                    Navigator.of(context).pop();
+                    return const Text("");
+                  }
               );
             }
-        )
+        ),
+        bottomNavigationBar: Footer(),
       )
     );
   }

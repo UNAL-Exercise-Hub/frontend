@@ -9,13 +9,12 @@ class RegisterRepositoryImp implements IRegisterRepository {
   GraphQLClient client = graphQLConfig.clientToQuery();
 
   @override
-  Future<void> register(int id_usuario, String nombres, String apellidos, String fecha_nacimiento, String sexo, BigInt cel, String email, String password) async {
+  Future<void> register(String nombres, String apellidos, String fecha_nacimiento, String sexo, String cel, String email, String password) async {
     try {
       await client.query(QueryOptions(
           document: gql(registerQuery),
           fetchPolicy: FetchPolicy.noCache,
           variables: {
-            "id_usuario": id_usuario,
             "nombres": nombres,
             "apellidos": apellidos,
             "fecha_nacimiento": fecha_nacimiento,
@@ -27,6 +26,7 @@ class RegisterRepositoryImp implements IRegisterRepository {
           ,
           pollInterval: const Duration(seconds: 10)));
     } catch (e){
+      print("error de query");
       throw Exception("Fallo en el registro");
     }
   }

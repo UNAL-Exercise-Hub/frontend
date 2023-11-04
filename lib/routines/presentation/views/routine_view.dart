@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class RoutineView extends StatelessWidget {
   final int numberOfCards = 4;
-
-  const RoutineView({Key? key}): super(key: key);
+  final void Function() onPressed;
+  const RoutineView({Key? key, required this.onPressed}): super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,15 +16,16 @@ class RoutineView extends StatelessWidget {
             ListTile(
               title: Text('Día ${index + 1}'), // Mantén el título original
             ),
-            const Text('Ejercicios'),
-            const Text('Duracion maxima'),
-            const Text('Hora de inicio'),
+            const Text('Duración: 1 hora y media',),
+            const Text('Hora de inicio: 20:00'),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: <Widget>[
                 TextButton(
                   child: const Text('Iniciar'),
-                  onPressed: () {/* ... */},
+                  onPressed: () {
+                    onPressed();
+                  },
                 ),
                 const SizedBox(width: 8),
               ],

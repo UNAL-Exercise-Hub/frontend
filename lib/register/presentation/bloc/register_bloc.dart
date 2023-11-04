@@ -23,6 +23,7 @@ class RegisterBloc extends Bloc<RegisterEvent, RegisterState>{
   Future<void> _registerEvent(Register event, Emitter<RegisterState> emit) async{
     emit(const RegisterState.loading());
     try {
+      emit(RegisterState.loading());
       await registerUseCase.call(email: event.email);
       emit(const RegisterState.doneRegister());
     } catch (e){
