@@ -11,23 +11,15 @@ class RegisterView extends StatelessWidget {
   final cel = TextEditingController();
   final email = TextEditingController();
   final password = TextEditingController();
-  final void Function(String,String,String,String,String,String,String) onPressed;
+  final void Function(String, String, String, String, String, String, String)
+      onPressed;
 
-  RegisterView({Key? key, required this.onPressed}): super(key:key);
+  RegisterView({Key? key, required this.onPressed}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Center(
-          child: Container(
-            padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
-            child: Text(
-              "Registro de usuario",
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
-            ),
-          ),
-        ),
         Padding(
           padding: EdgeInsets.only(right: 10, left: 10, top: 10),
           child: TextField(
@@ -102,11 +94,17 @@ class RegisterView extends StatelessWidget {
         Row(
           children: [
             Padding(
-              padding:
-              EdgeInsets.only(right: 5, left: 100, top: 10, bottom: 5),
+              padding: EdgeInsets.only(right: 5, left: 100, top: 10, bottom: 5),
               child: ElevatedButton(
                 onPressed: () {
-                  onPressed(nombres.value.text,apellidos.value.text,fecha_nacimiento.value.text,sexo.value.text,cel.value.text, email.value.text,password.value.text);
+                  onPressed(
+                      nombres.value.text,
+                      apellidos.value.text,
+                      fecha_nacimiento.value.text,
+                      sexo.value.text,
+                      cel.value.text,
+                      email.value.text,
+                      password.value.text);
                 },
                 child: Text("Registrar"),
                 style: ElevatedButton.styleFrom(
