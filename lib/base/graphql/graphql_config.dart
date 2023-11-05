@@ -1,7 +1,10 @@
 import 'package:graphql_flutter/graphql_flutter.dart';
 
-class GraphQLConfig{
-  static HttpLink httpLink = HttpLink('http://10.0.2.2:4000/graphql');
+class GraphQLConfig {
+  static HttpLink httpLink = HttpLink('http://localhost:8080/graphql');
 
-  GraphQLClient clientToQuery() => GraphQLClient(link: httpLink, cache: GraphQLCache());
+  GraphQLClient clientToQuery() => GraphQLClient(
+        link: httpLink,
+        cache: GraphQLCache(),
+      );
 }
