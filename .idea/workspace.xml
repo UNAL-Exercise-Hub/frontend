@@ -5,66 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca471867-40e6-4f5b-b351-ff2eb20c683d" name="Changes" comment="No hay tiempo jeje">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/.last_build_id" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/assets/AssetManifest.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/assets/AssetManifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/assets/FontManifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/assets/NOTICES" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/assets/assets/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/assets/fonts/MaterialIcons-Regular.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/assets/packages/cupertino_icons/assets/CupertinoIcons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/assets/packages/youtube_player_flutter/assets/speedometer.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/assets/shaders/ink_sparkle.frag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/canvaskit/canvaskit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/canvaskit/canvaskit.wasm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/canvaskit/chromium/canvaskit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/canvaskit/chromium/canvaskit.wasm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/canvaskit/skwasm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/canvaskit/skwasm.wasm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/canvaskit/skwasm.worker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/flutter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/flutter_service_worker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/icons/Icon-192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/icons/Icon-512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/icons/Icon-maskable-192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/icons/Icon-maskable-512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/main.dart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/web/version.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/.last_build_id" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/assets/AssetManifest.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/assets/AssetManifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/assets/FontManifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/assets/NOTICES" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/assets/assets/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/assets/fonts/MaterialIcons-Regular.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/assets/packages/cupertino_icons/assets/CupertinoIcons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/assets/packages/youtube_player_flutter/assets/speedometer.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/assets/shaders/ink_sparkle.frag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/canvaskit/canvaskit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/canvaskit/canvaskit.wasm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/canvaskit/chromium/canvaskit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/canvaskit/chromium/canvaskit.wasm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/canvaskit/skwasm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/canvaskit/skwasm.wasm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/canvaskit/skwasm.worker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/flutter_service_worker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/main.dart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/version.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/base/graphql/graphql_config.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/base/graphql/graphql_config.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
