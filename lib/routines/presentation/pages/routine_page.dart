@@ -1,9 +1,11 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:front_end_unworkout/base/presentation/widgets/error_indicator.dart';
 import 'package:front_end_unworkout/base/presentation/widgets/loading_indicator.dart';
 import 'package:front_end_unworkout/routines/presentation/bloc/routine_bloc.dart';
 import 'package:front_end_unworkout/routines/presentation/views/routine_view.dart';
+import 'package:front_end_unworkout/routines/presentation/widgets/video_detail_widget.dart';
 import 'package:front_end_unworkout/videos/presentation/pages/videos_page.dart';
 import 'package:get_it/get_it.dart';
 
@@ -12,12 +14,13 @@ class RoutinePage extends StatelessWidget{
 
   @override
   Widget build(BuildContext context){
+    const bool isMobile = kIsWeb;
     return BlocProvider<RoutineBloc>(
         create: (context) => GetIt.instance<RoutineBloc>(),
         child: Scaffold(
             appBar: AppBar(
-              title: const Text("UNWORKOUT"),
-              backgroundColor: const Color(0xFFD60909),
+              title: const Text("UNEXCERCISEHUB"),
+              backgroundColor: const Color(0xFF2e23ac),
               centerTitle: true,
             ),
             backgroundColor: Colors.white,
@@ -32,7 +35,9 @@ class RoutinePage extends StatelessWidget{
                       doneRoutine: (){
                         /*Navigator.push(context, MaterialPageRoute(builder: (context) => VideosPage()));*/
                         return RoutineView(onPressed: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => VideosPage()));
+                          showBottomSheet(context: context, builder: (BuildContext context){
+                            return const VideoDetailWidget(isMobile: isMobile,);
+                          });
                         },);
                       },
                       error: () => ErrorIndicator(onPressed: () {

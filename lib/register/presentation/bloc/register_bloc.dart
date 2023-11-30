@@ -24,9 +24,12 @@ class RegisterBloc extends Bloc<RegisterEvent, RegisterState>{
     emit(const RegisterState.loading());
     try {
       emit(RegisterState.loading());
-      await registerUseCase.call(email: event.email);
+      print("All good");
+      print(event.email);
+      await registerUseCase.call(email: event.email, apellidos: event.apellidos, nombres: event.nombres, cel: event.cel, fecha_nacimiento: event.fecha_nacimiento, password: event.password, sexo: event.sexo);
       emit(const RegisterState.doneRegister());
     } catch (e){
+      print("Error en registerUseCase");
       emit(const RegisterState.error());
     }
   }

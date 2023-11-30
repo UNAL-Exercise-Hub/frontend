@@ -4,6 +4,7 @@ import 'package:front_end_unworkout/base/presentation/widgets/footer.dart';
 import 'package:front_end_unworkout/base/presentation/widgets/navbar.dart';
 import 'package:front_end_unworkout/login/presentation/pages/login_page.dart';
 import 'package:front_end_unworkout/login/presentation/views/login_view.dart';
+import 'package:front_end_unworkout/routines/presentation/pages/routine_page.dart';
 
 Future<void> main() async {
   await initializeDependencies();
@@ -15,6 +16,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: LoginPage());
+    return const MaterialApp(home: RoutinePage());
   }
 }

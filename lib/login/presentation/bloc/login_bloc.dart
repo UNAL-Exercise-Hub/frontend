@@ -24,8 +24,11 @@ class LoginBloc extends Bloc<LoginEvent, LoginState>{
     emit(const LoginState.loading());
     try {
       await loginUseCase.call(email: event.email, password: event.password);
+      print("all good");
       emit(const LoginState.doneLogin());
+      print("si se pudo");
     } catch(e){
+      print("something fail");
       emit(const LoginState.error());
     }
   }

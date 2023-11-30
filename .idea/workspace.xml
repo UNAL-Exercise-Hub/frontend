@@ -5,8 +5,85 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca471867-40e6-4f5b-b351-ff2eb20c683d" name="Changes" comment="No hay tiempo jeje">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/routines/presentation/widgets/video_detail_widget.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/app.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/logo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/.last_build_id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/AssetManifest.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/AssetManifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/FontManifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/NOTICES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/assets/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/fonts/MaterialIcons-Regular.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/packages/cupertino_icons/assets/CupertinoIcons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/packages/youtube_player_flutter/assets/speedometer.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/shaders/ink_sparkle.frag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/canvaskit/canvaskit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/canvaskit/canvaskit.wasm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/canvaskit/chromium/canvaskit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/canvaskit/chromium/canvaskit.wasm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/canvaskit/skwasm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/canvaskit/skwasm.wasm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/canvaskit/skwasm.worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/flutter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/flutter_service_worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/icons/Icon-192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/icons/Icon-512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/icons/Icon-maskable-192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/icons/Icon-maskable-512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/main.dart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/version.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/base/graphql/graphql_config.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/base/graphql/graphql_config.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/login/data/repositories/login_repository_imp.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/data/repositories/login_repository_imp.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/login/data/schemas/login_schemas.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/data/schemas/login_schemas.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/login/presentation/bloc/login_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/presentation/bloc/login_bloc.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/login/presentation/pages/login_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/presentation/pages/login_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/register/data/repositories/register_repository_imp.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/register/data/repositories/register_repository_imp.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/register/data/schemas/register_schemas.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/register/data/schemas/register_schemas.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/register/domain/use_cases/register_use_case.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/register/domain/use_cases/register_use_case.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/register/presentation/bloc/register_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/register/presentation/bloc/register_bloc.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/register/presentation/views/register_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/register/presentation/views/register_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/routines/presentation/pages/routine_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routines/presentation/pages/routine_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/routines/presentation/views/routine_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routines/presentation/views/routine_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.last_build_id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/AssetManifest.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/AssetManifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/FontManifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/NOTICES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/assets/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/fonts/MaterialIcons-Regular.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/packages/cupertino_icons/assets/CupertinoIcons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/packages/youtube_player_flutter/assets/speedometer.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/shaders/ink_sparkle.frag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/canvaskit/canvaskit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/canvaskit/canvaskit.wasm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/canvaskit/chromium/canvaskit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/canvaskit/chromium/canvaskit.wasm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/canvaskit/skwasm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/canvaskit/skwasm.wasm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/canvaskit/skwasm.worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/flutter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/flutter_service_worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/Icon-192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/Icon-512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/Icon-maskable-192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/Icon-maskable-512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/main.dart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/version.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +118,7 @@
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
     "io.flutter.reload.alreadyRun": "true",
-    "last_opened_file_path": "C:/Users/Jhon E/OneDrive/Documentos/Arquisoft-DESKTOP-I9QQVJC/proyecto/frontend",
+    "last_opened_file_path": "C:/Users/josep/Documents/FidelityRepos/dfr-fidelity-app",
     "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
     "show.migrate.to.gradle.popup": "false"
   }
@@ -59,7 +136,7 @@
       <recent name="C:\Users\josep\OneDrive\Documentos\Universidad\Proyecto Arqui\front_end_unworkout" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Flutter.main.dart">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />

@@ -5,7 +5,7 @@ class RegisterUseCase {
 
   RegisterUseCase(this._iRegisterRepository);
 
-  Future<void> call({String? nombres, String? apellidos, String? fecha_nacimiento, String? sexo, String? cel, String? email, String? password}){
-    return _iRegisterRepository.register(nombres!, apellidos!, fecha_nacimiento!, sexo!, cel!, email!, password!);
+  Future<void> call({String? nombres, String? apellidos, String? fecha_nacimiento, String? sexo, String? cel, required String email, String? password}){
+    return _iRegisterRepository.register(nombres!, apellidos!, fecha_nacimiento!, sexo!, cel!, email, password!);
   }
 }

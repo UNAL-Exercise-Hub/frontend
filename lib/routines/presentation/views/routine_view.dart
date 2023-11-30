@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:front_end_unworkout/routines/domain/models/routine_model.dart';
 
 class RoutineView extends StatelessWidget {
-  final int numberOfCards = 4;
+  final int numberOfCards = 1;
   final void Function() onPressed;
-  const RoutineView({Key? key, required this.onPressed}): super(key: key);
+
+  const RoutineView(
+      {super.key,
+        required this.onPressed
+      });
 
   @override
   Widget build(BuildContext context) {
@@ -13,8 +18,8 @@ class RoutineView extends StatelessWidget {
           (index) => Card(
         child: Column(
           children: [
-            ListTile(
-              title: Text('Día ${index + 1}'), // Mantén el título original
+            const ListTile(
+              title: Text('Jueves'), // Mantén el título original
             ),
             const Text('Duración: 1 hora y media',),
             const Text('Hora de inicio: 20:00'),
@@ -30,7 +35,6 @@ class RoutineView extends StatelessWidget {
                 const SizedBox(width: 8),
               ],
             ),
-            // Agrega más Text widgets según sea necesario
           ],
         ),
       ),

@@ -22,7 +22,7 @@ class RegisterView extends StatelessWidget {
       children: [
         Padding(
           padding: EdgeInsets.only(right: 10, left: 10, top: 10),
-          child: TextField(
+          child: TextField(controller: nombres,
             decoration: InputDecoration(
                 labelText: "Nombres",
                 hintText: "ingrese sus nombres",
@@ -32,7 +32,7 @@ class RegisterView extends StatelessWidget {
         ),
         Padding(
           padding: EdgeInsets.only(right: 10, left: 10, top: 10),
-          child: TextField(
+          child: TextField(controller: apellidos,
             decoration: InputDecoration(
                 labelText: "Apellidos",
                 hintText: "Ingrese sus apellidos",
@@ -42,7 +42,7 @@ class RegisterView extends StatelessWidget {
         ),
         Padding(
           padding: EdgeInsets.only(right: 10, left: 10, top: 10),
-          child: TextField(
+          child: TextField(controller: fecha_nacimiento,
             decoration: InputDecoration(
                 labelText: "Fecha de nacimiento",
                 hintText: "DD/MM/AAAA",
@@ -52,7 +52,7 @@ class RegisterView extends StatelessWidget {
         ),
         Padding(
           padding: EdgeInsets.only(right: 10, left: 10, top: 10),
-          child: TextField(
+          child: TextField(controller: sexo,
             decoration: InputDecoration(
                 labelText: "Sexo",
                 hintText: "Ingrese su sexo",
@@ -62,7 +62,7 @@ class RegisterView extends StatelessWidget {
         ),
         Padding(
           padding: EdgeInsets.only(right: 10, left: 10, top: 10),
-          child: TextField(
+          child: TextField(controller: cel,
             decoration: InputDecoration(
                 labelText: "Celular",
                 hintText: "Ingrese su celular",
@@ -72,7 +72,7 @@ class RegisterView extends StatelessWidget {
         ),
         Padding(
           padding: EdgeInsets.only(right: 10, left: 10, top: 10),
-          child: TextField(
+          child: TextField(controller: email,
             decoration: InputDecoration(
                 labelText: "Correo electronico",
                 hintText: "ingrese su correo electronico",
@@ -82,7 +82,7 @@ class RegisterView extends StatelessWidget {
         ),
         Padding(
           padding: EdgeInsets.only(right: 10, left: 10, top: 10, bottom: 10),
-          child: TextField(
+          child: TextField(controller: password,
             obscureText: true,
             decoration: InputDecoration(
                 labelText: "Contraseña",
@@ -115,7 +115,9 @@ class RegisterView extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(right: 5, left: 5, top: 10, bottom: 5),
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
                 child: Text("Cancelar"),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Color(0xFFD60909),

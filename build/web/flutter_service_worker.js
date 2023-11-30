@@ -5,10 +5,10 @@ const CACHE_NAME = 'flutter-app-cache';
 
 const RESOURCES = {"assets/AssetManifest.bin": "5bd92d143828634fa7a3cb5c131b0ee7",
 "assets/AssetManifest.json": "dae686e706b692bd6244381c779f76dc",
-"assets/assets/logo.jpg": "3caf8c1639947b7922f7a41fbed88384",
+"assets/assets/logo.jpg": "d630e8790b5fc53a985a2517b51c718a",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/fonts/MaterialIcons-Regular.otf": "5bfe510ac3976babe0b9fd844fda88d2",
-"assets/NOTICES": "9773f372113495bb070dbd33b8678e5f",
+"assets/NOTICES": "f12d724d089967cb2138183b0e5aca23",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "89ed8f4e49bcdfc0b5bfc9b24591e347",
 "assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.css": "5a8d0222407e388155d7d1395a75d5b9",
 "assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.html": "16911fcc170c8af1c5457940bd0bf055",
@@ -22,15 +22,15 @@ const RESOURCES = {"assets/AssetManifest.bin": "5bd92d143828634fa7a3cb5c131b0ee7
 "canvaskit/skwasm.wasm": "1a074e8452fe5e0d02b112e22cdcf455",
 "canvaskit/skwasm.worker.js": "51253d3321b11ddb8d73fa8aa87d3b15",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"flutter.js": "f916451a1f92b11ff8e28c4f8286d327",
+"flutter.js": "6b515e434cea20006b3ef1726d2c8894",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "b30c1838067656ab5f802bf962d6513e",
-"/": "b30c1838067656ab5f802bf962d6513e",
-"main.dart.js": "c4db89219b5a1e3e89ad24b4a2a4c66b",
-"manifest.json": "30908ef029c0bd5108e771514da81d76",
+"index.html": "78e987de0de951dad2d5d0ebf7bf5a26",
+"/": "78e987de0de951dad2d5d0ebf7bf5a26",
+"main.dart.js": "e8d0dfe450deff557dba8f2f6adb4384",
+"manifest.json": "0030ff64be1c3181710c3014b11018a8",
 "version.json": "31d971b72e8a7cf51c6e6f4575dc15da"};
 // The application shell files that are downloaded before a service worker can
 // start.

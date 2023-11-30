@@ -1,6 +1,6 @@
 {
-    "name": "front_end_unworkout",
-    "short_name": "front_end_unworkout",
+    "name": "frontend",
+    "short_name": "frontend",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

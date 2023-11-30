@@ -7,15 +7,17 @@ class LoginRepositoryImp implements ILoginRepository {
 
   static GraphQLConfig graphQLConfig = GraphQLConfig();
   GraphQLClient client = graphQLConfig.clientToQuery();
+  late QueryResult<Object> response;
 
   @override
   Future<void> login(String email, String password) async {
     try {
-      await client.query(QueryOptions(
+      response = await client.query(QueryOptions(
           document: gql(loginQuery),
           fetchPolicy: FetchPolicy.noCache,
           variables: {"email": email, "password": password},
           pollInterval: const Duration(seconds: 10)));
+      print(response);
     } catch (e) {
       throw Exception("Error en el ingreso");
     }

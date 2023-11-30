@@ -18,7 +18,7 @@ class LoginPage extends StatelessWidget{
       child: Scaffold(
         appBar: AppBar(
             title: const Text("Inicia Sesión"),
-            backgroundColor: const Color(0xFFD60909),
+            backgroundColor: const Color(0x2E23AC),
           ),
         backgroundColor: Colors.white,
         body: BlocBuilder<LoginBloc, LoginState>(
